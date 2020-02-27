@@ -273,6 +273,8 @@ let topaoIznadProseka = (dani, mesec, godina) => {
 }
 console.log(topaoIznadProseka(merenjeDani, 2, 2020));
 
+console.log("test poruka");
+
 
 
 //Napisati metode koje:
