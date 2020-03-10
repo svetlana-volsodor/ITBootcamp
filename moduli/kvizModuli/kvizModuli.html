@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kviz</title>
+    <link rel="stylesheet" href="kvizModuli.css">
+</head>
+<body>
+    <div class="intro">
+        <div class="text">
+            <h2>Koliko je Linux za tebe</h2>
+        </div>
+    </div>
+    <div class="quiz" >
+        <div class="text">
+            <form>
+                <div class="question">
+                    <p>1. Koju lampu bi najradije koristio u svojoj kancelariji?</p>
+                    <div class="check">
+                        <input type="radio" name="q1" value="A" checked> 
+                        <label>Stona lampa</label>
+                    </div>
+                    <div class="check">
+                        <input type="radio" name="q1" value="B">
+                        <label>Dovoljna je sijalica u sobi</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>2. Da li vise volis desktop ili laptop racunare?</p>
+                    <div class="check">
+                        <input type="radio" name="q2" value="A" checked>
+                        <label>Desktop</label>
+                    </div>
+                    <div class="check">
+                        <input type="radio" name="q2" value="B">
+                        <label>Laptop</label>
+                    </div>
+                <div class="question">
+                    <p>3. Koliko cesto otklanjas tehnicke probleme rodbini i drugarima?</p>
+                    <div class="check">
+                        <input type="radio" name="q3" value="A" checked>
+                        <label>Retko</label>
+                    </div>
+                    <div class="check">
+                        <input type="radio" name="q3" value="B">
+                        <label>Cesto</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>4. Odakle skidas muziku?</p>
+                    <div class="check">
+                        <input type="radio" name="q4" value="A" checked>
+                        <label>Spotified</label>
+                    </div>
+                    <div class="check">
+                        <input type="radio" name="q4" value="B">
+                        <label>The Pirate Bay</label>
+                    </div>
+                </div> 
+               <!-- <div class="question">
+                    <p>5. Da li si vegetarijanac?</p>
+                    <div class="check">
+                        <input type="radio" name="q5" value="A" checked>
+                        <label>Da, fuj meso!</label>
+                    </div>
+                    <div class="check">
+                        <input type="radio" name="q5" value="B">
+                        <label>Pobogu, ne!</label>
+                    </div>
+                </div>  -->
+                <div class="question">
+                    <p>5. Koji ti je nadimak?</p>
+                    <input type="text" name="nick" value>
+                </div>
+
+
+                </div>
+                <div class="finish">
+                    <input type="submit" class="submit" value="Posalji">
+                </div>
+            </form>
+        </div>
+    </div>           
+    <script type="module" src="kvizModuli.js"></script>
+</body>
+</html>

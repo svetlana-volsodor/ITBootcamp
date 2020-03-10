@@ -1,0 +1,150 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekat vezbanje</title>
+    <link rel="stylesheet" type="text/css" href="prVez.css">
+</head>
+<body>
+    <div id="toDo">
+        <h2>Moj podsetnik</h2>
+        <ul>
+            <li>Plati racune</li>
+            <li>Prosetaj psa</li>
+            <li>Izbaci smece</li>
+            <li>Kupi hleb</li>
+
+        </ul>
+        <input type="text" placeholder="Unesite novi zadatak" id="unesi">
+        <br>
+        <input type="radio" name="dodaj" id="dodajNaPocetak" checked>
+        <label>Dodaj na pocetak</label><br>
+        <input type="radio" name="dodaj" id="dodajNaKraj">
+        <label>Dodaj na kraj</label><br>
+        <button>Dodaj</button><br>
+    </div>
+    <div id="quiz">
+        <h1 class="naslov">Koliko me poznajes?</h1>
+        <form>
+            <div class="question">
+                <p>1. Gde bih se sutra preselila da mogu? (Tip: Nije Madona blesava)</p>
+                <div class="answer">
+                    <input type="radio" name="q1" value="A" checked>
+                    <label> Portugal</label><br>
+                    <input type="radio" name="q1" value="B">
+                    <label> SAD</label><br>
+                    <input type="radio" name="q1" value="C">
+                    <label> Rusija</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>2. Kakvu kafu najradije pijem?</p>
+                <div class="answer">
+                    <input type="radio" name="q2" value="A" checked>
+                    <label> Turska</label><br>
+                    <input type="radio" name="q2" value="B">
+                    <label>Espreso</label><br>
+                    <input type="radio" name="q2" value="C">
+                    <label> Nes</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>3. Idealno mesto za odmor?</p>
+                <div class="answer">
+                    <input type="radio" name="q3" value="A" checked>
+                    <label> Banja</label><br>
+                    <input type="radio" name="q3" value="B">
+                    <label> Planina</label><br>
+                    <input type="radio" name="q3" value="C">
+                    <label> More</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>4. Za sebe mislim da sam...</p>
+                <div class="answer">
+                    <input type="radio" name="q4" value="A" checked>
+                    <label> Socijalista</label><br>
+                    <input type="radio" name="q4" value="B">
+                    <label></label> Liberal</label><br>
+                    <input type="radio" name="q4" value="C">
+                    <label></label> Radikal</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>5. Omiljeni filmski zanr mi je...</p>
+                <div class="answer">
+                    <input type="radio" name="q5" value="A" checked>
+                    <label> Drama</label><br>
+                    <input type="radio" name="q5" value="B">
+                    <label>Horor</label><br>
+                    <input type="radio" name="q5" value="C">
+                    <label>Komedija</label>
+                </div>
+            </div>
+            <div class="finish">
+                <input type="submit" class="submit" value="Posalji">
+            </div>
+        </form>
+        
+    </div>
+    <div id="dom">
+        <p class="dom">prvi tekst</p>
+        <p class="dom">drugi tekst</p>
+        <p class="dom">treci tekst</p>
+        
+    </div>
+    <div id="event">
+        <label>Kvadrirati ovaj broj:</label>
+        <input type="number" id="inputKv">
+        <button id="btnKv">Izracunaj</button><br>
+        <label>Prepolovi ovaj broj:</label>
+        <input type="number" id="inputPl">
+        <button id="btnPl">Izracunaj</button><br>
+        <label>Izracunaj povrsinu kruga za zadati poluprecnik</label>
+        <input type="number" id="krug">
+        <button id="btnKrug">Izracunaj</button>
+        <p id="rez"></p>
+    </div>
+    <div id="digitron">
+        <h3>Digitron</h3>
+        <button id="b1" class="broj">1</button>
+        <button id="b2" class="broj">2</button>
+        <button id="b3" class="broj">3</button>
+        <button id="plus" class="operacija">+</button>
+        <button id="puta" class="operacija">*</button>
+        <br><br>
+        <button id="b4" class="broj">4</button>
+        <button id="b5" class="broj">5</button>
+        <button id="b6" class="broj">6</button>
+        <button id="minus" class="operacija">-</button>
+        <button id="podeljeno" class="operacija">/</button>
+        <br><br>
+        <button id="b7" class="broj">7</button>
+        <button id="b8" class="broj">8</button>
+        <button id="b9" class="broj">9</button>
+        
+        <button id="jednako">=</button>
+        <br><br>
+        <p id="prikaz"></p>
+
+    </div>
+    <div>
+        <h4>Digitalni sat</h4>
+        <div id="sat"></div>
+        <div id="stoperica"> 
+            <h4>Stoperica</h4>   
+            <button id="start">Pocni</button>
+            <button id="stop">Zaustavi</button>
+            <p id="ispis"></p>
+        </div>    
+    </div>
+    <div>
+        <form  id="izrazi">
+            <input type="text" placeholder="username" id="username">
+            <input type="text" placeholder="password" id="pass">
+            <input type="submit" value="potvrda" id="submit">
+        </form>
+    </div>
+    <script src="prVezMain.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    background-color: mistyrose;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:22px;
+}
+h2 {
+    margin-left: 50px;
+    font-size: 30px;
+}
+
+ul{
+    list-style-type: none;
+    
+
+}
+li {
+    width: 270px;
+    margin: 10px;
+    padding: 10px;
+    background-color: aquamarine;
+    border: 2px solid darkcyan;
+    text-align: center;
+    font-weight: bold;
+}
+li:hover {
+    background-color: darkcyan;
+}
+#unesi, button {
+    margin: 0 50px;
+    padding: 5px;
+    width: 290px;
+    background-color: peachpuff;
+    border: 1px solid palevioletred;
+}
+input {
+    margin: 0 60px;
+}
+
+button {
+    background-color: aquamarine;
+    border: 2px solid darkcyan;
+}
+button:hover {
+    background-color: darkcyan;
+}
+
+#quiz {
+    margin: 0px 50px;
+    background-color: rebeccapurple;
+    color: rgb(231, 207, 207);
+}
+h1 {
+    text-align: center;  
+}
+.question{
+    background-color: rgb(49, 15, 49);
+    padding: 5px 30px;
+}
+.submit {
+    width: 200px;
+    padding: 10px;
+    margin: 10px 50px;
+    background-color: rgb(49, 15, 49);
+    color: rgb(231, 207, 207);
+    font-size: 22px;
+}
+
+.error {
+    color: red;
+    background-color: yellow;
+    font-style: italic;
+}
+.success {
+    color: green;
+    background-color: seashell;
+    font-style: oblique;
+}
+.tekst {
+    font-family: 'Times New Roman', Times, serif;
+    color: blueviolet;
+    font-size: 25px;
+}
+
+#digitron, #sat{
+    margin-left: 50px;
+}
+h3, h4 {
+    margin-left: 10px;
+}
+.broj, .operacija {
+    width: 50px;
+    margin: 5px;
+    padding: 5px;
+    background-color: crimson;
+    color: white;
+    border-color: darkred;
+}
+.broj:hover, .operacija:hover {
+    background-color: rgb(73, 6, 6)
+}
+
+#sat {
+    margin-left: 60px;
+    width: 100px;
+    background-color: rgb(230, 212, 212);
+    text-align: center;
+    border: 3px double red;
+    font-weight: bold;
+}
+
+#start, #stop {
+    width: 100px;
+    background-color: lawngreen;
+    border: 2px dotted limegreen;
+}
+#start:hover, #stop:hover {
+    background-color: springgreen;
+}
+#stoperica {
+    margin-left: 60px;
+}
+.dobra{
+    border: 2px solid green;
+    color: green;
+}
+.losa{
+    border: 2px solid red;
+    color: red;
+}
