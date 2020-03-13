@@ -51,7 +51,7 @@ console.log(brojevi1.oduzmi());
 console.log(brojevi1.pomnozi());
 console.log(brojevi1.podeli());
 
-let brojevi2 = new Brojevi(112, 20);
+let brojevi2 = new Brojevi(100, 20);
 console.log(brojevi2.saberi());
 console.log(brojevi2.oduzmi());
 console.log(brojevi2.pomnozi());
