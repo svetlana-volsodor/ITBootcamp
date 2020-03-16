@@ -26,6 +26,7 @@ export class Pacijent {
     get pTezina(){
         return this.tezina;
     }
+    
     set pTezina(t){
         if(t<0){
             this.tezina = 0;

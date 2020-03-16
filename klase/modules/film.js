@@ -1,8 +1,9 @@
 export default class Film {
-    constructor (n, r, godIzd){
+    constructor (n, r, g, o){
         this.fNaslov = n;
         this.fReziser = r;
-        this.fGodina = godIzd; //---!!!! SETTER POZIVATI I U KONSTRUKTORU 
+        this.fGodina = g; //---!!!! SETTER POZIVATI I U KONSTRUKTORU 
+        this.fOcena = o;
     }
    stampaj() {
        let title = this.naslov;
@@ -11,8 +12,14 @@ export default class Film {
    set fNaslov(n){
        this.naslov = n;
    }
+   get fNaslov(){
+       return this.naslov;
+   }
    set fReziser(r){
        this.reziser = r;
+   }
+   get fReziser(){
+       return this.reziser;
    }
    set fGodina(g){
        if(g > 1800) {
@@ -21,7 +28,23 @@ export default class Film {
            this.godinaIzdanja = 1800;
        }
    }
-
-
-
+   get fGodina(){
+       return this.godinaIzdanja;
+   }
+   set fOcena(o){
+       this.ocena = o;
+   }
+   get fOcena(){
+       return this.ocena;
+   }
+   prosecnaOcena(){
+       let s= 0;
+       let br = this.ocena.length;
+       let niz = this.ocena;
+       niz.forEach(e=>{
+        s+=e;
+       });
+       let arSr = s/br;
+       return arSr;
+   }
 }
