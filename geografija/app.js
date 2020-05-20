@@ -94,5 +94,6 @@ if(!localStorage.korisnikLS){
     btnPojmovi.addEventListener('click', e =>{
         e.preventDefault();
     })
+}; 
 
-};
+
