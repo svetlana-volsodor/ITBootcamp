@@ -40,8 +40,6 @@ let btnPojmovi = document.querySelector('#btnPojmovi');
         localStorage.setItem('korisnikLS', noviKorisnik);
     }
 
-
-
     async addPojam(pojam){
         let dateTmp = new Date();
         
