@@ -1,0 +1,21 @@
+1. Kreirali smo osnovni dizajn stranice(osnovni html i css stranice).
+2. Konekcija sa bazom podataka FIRESTORE
+3.Kreiranje chat.js fajla i ukljucen u html fajla
+    -Kreirali smo klasu Chatroom sa konstruktorom, geterima i seterima
+    -U konstruktor samo najpre stavili this.room i this.username
+    -Potom smo dodali cetove iz baze this.chats = db.collection('chats');
+    -Zatim smo napravili metodu dodavanja dokumenata u bazu, putem asinhrone funkcije addChat;
+    -Potom metod getChets - koji ima ulogu listenera i radi samo kada se nesto doda bazi podataka -to je callback funkcija;
+4.    Kreiranje app.js fajla koji je spojnica za klase
+    -instance(objekti) klasa
+    -DOM elemnti
+    -provera username-a
+    -promena username-a
+    -dodavanje nov poruke u chat 
+    -promena sobe sa event listenerom za event kad se klikne na dugme(BUTTON)
+5. Kreiranje fajla ui.js - sluzi korisnickom interfejsu
+    -prikaz elemenata na stranici
+    -formatiranje prikaza LI elemenata
+    -formatiranje datuma za prikaz na stranici 
+    -formiranje metoda clear() koji sluzi za brisanje ul liste sa stranice 
+        

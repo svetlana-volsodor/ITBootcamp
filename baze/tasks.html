@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+    <style>
+        label {
+            display: inline-block;
+            width: 100px;
+        }
+        input {
+        
+            padding-left: 10px;
+        }
+        textarea {
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-firestore.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+        apiKey: "AIzaSyCPh4521zsts5jBr-321nHqNodoI7B6qWw",
+        authDomain: "projekat-prvi.firebaseapp.com",
+        databaseURL: "https://projekat-prvi.firebaseio.com",
+        projectId: "projekat-prvi",
+        storageBucket: "projekat-prvi.appspot.com",
+        messagingSenderId: "444355871755",
+        appId: "1:444355871755:web:c19ed4c8373d9e396c730e"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        let db = firebase.firestore();//db - objekat konekcije ka Firestore bazi
+    </script>
+    <ul>
+
+    </ul>
+    <form>
+        <label for="title">Title:</label>
+        <input type="text" name="title" id="title">
+        <br><br>
+
+        <label for="start_date">Start date:</label>
+        <input type="datetime-local" name="start_date" id="start_date">
+        <br><br>
+
+        <label for="due_date">Due date:</label>
+        <input type="datetime-local" name="due_date" id="due_date">
+        <br><br>
+
+        <lebel for="priority">Priority:</lebel>
+        <input type="checkbox" name="priority" id="priority" checked>
+        <br><br>
+
+        <lable for="description">Description:</lable>
+        <textarea name="description" id="destription" cols="30" rows="10"></textarea>
+        <br><br>
+
+        <input type="submit" value="Create new task">
+        <div id="poruka"></div>
+    </form>
+    <script src="tasks.js"></script>
+</body>
+</html>

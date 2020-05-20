@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITBootcamp Chat</title>
+
+    <link rel="stylesheet" type="text/css" href="stil.css">
+</head>
+<body>
+
+    <!--Naslov ceta-->
+    
+    <div id="top">
+        <header>
+            <h1>ITBootcamp Chat</h1>
+            <h2>Choose a chatroom</h2>
+        </header>
+
+        <!--Dugmad za sobe, chatrooms-->
+        <nav>
+            <button id="general" class="btn">#general</button>
+            <button id="js" class="btn">#js</button>
+            <button id="homework"class="btn">#homeworks</button>
+            <button id="tests" class="btn">#tests</button>
+        </nav>
+    </div>
+
+    <!--Prostor za poruke-->
+    <section>
+        <ul id="ulMessages">
+            <!--ovde ce se nalaziti poruke-->
+        </ul>
+    </section>
+
+    <!--mesto za prvu formu za unos poruke-->
+    <div id="bottom">
+        <form id="formMessage">
+            <input type="text" placeholder="Your message..." id="inputMessage">
+            <input type="submit" value="Send" id="btnSend" class="btn">
+        </form>
+
+        <!--forma za promenu korisnickog imena-->
+        <form id="formUsername">
+            <input type="text" placeholder="Update username" id="inputUsername">
+            <input type="submit" value="Update" id="btnUpdate" class="btn">
+        </form>
+
+        <div id="divUpdatedUsername">    
+        </div>
+    </div>    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-firestore.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyCPh4521zsts5jBr-321nHqNodoI7B6qWw",
+        authDomain: "projekat-prvi.firebaseapp.com",
+        databaseURL: "https://projekat-prvi.firebaseio.com",
+        projectId: "projekat-prvi",
+        storageBucket: "projekat-prvi.appspot.com",
+        messagingSenderId: "444355871755",
+        appId: "1:444355871755:web:c19ed4c8373d9e396c730e"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    let db = firebase.firestore();
+    </script>
+    
+    <!-- Povezivanje sa eksternim JS fajlovima -->
+    <script src="app.js" type="module"></script>
+    <script src="chat.js" type="module"></script>
+    <script src="ui.js" type="module"></script>
+
+</body>
+</html>

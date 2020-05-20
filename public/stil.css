@@ -1,0 +1,197 @@
+
+
+ body{
+    
+     text-align: center;
+     color: purple;
+     height: 100%;
+     width: 100%;
+     margin: 0;
+
+ }
+
+ .btn{
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+    background-color: purple;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+ }
+
+ .btn:hover{
+     background-color: mediumpurple;
+     cursor: pointer;
+ }
+
+ form{
+    margin: 15px;    
+}
+
+ input{
+     width: 400px;
+     height: 30px;
+     font-size: 18px; 
+     border-radius: 5px; 
+ }
+
+ input:focus{
+     border: 3px purple solid;
+ }
+
+ input:focus, .btn:focus{
+     outline-width: 0px
+     ;
+ }
+
+ .username{
+    font-weight: bold;
+ }
+ .date{
+     color: grey;
+ }
+#ulMessages{
+    list-style-type: none;
+    font-size: 20px;
+    /*pozicioniranje centralno ispod top sekcije*/
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 26%;
+    bottom: 22%;
+    overflow: hidden;
+    /* ul centralno postavljena ali text levo poravnat */
+    text-align: left;
+    width: 700px;
+    margin: 0px auto;
+    /* skrolovanje poruka */
+    overflow-y: auto;
+    /* prelom cak i bez razmaka */
+    word-wrap: break-word;
+
+}
+
+#ulMessages>li{
+    width: 60%;
+    background-color: rgb(173, 134, 209);
+    margin-bottom: 10px;
+    margin-right: 5px;
+    padding: 20px;
+    border-radius: 0 20px 20px 20px;
+}
+
+.me{
+    margin-left: auto;
+    background-color: rgb(255, 71, 184) !important;/*stil koji pre svega treba primeniti*/
+    border-radius: 20px 0 20px 20px !important;
+}
+
+
+
+#top{
+    position: absolute;
+    height:30%;
+    /* postaviti centralno*/
+    left: 0;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+#bottom{
+    position: absolute;
+    height:25%;
+    /*postaviti centralno*/
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+ #divUpdatedUsername{
+     font-size: 20px;
+ }
+ #spanNewUsername{
+     font-weight: bold;
+ }
+ .btn-selected{
+     background-color: mediumpurple;
+     color: bisque;
+ }
+
+ textarea{
+     width: 400px;
+     height: 30px;
+     font-size: 18px; 
+     border-radius: 5px;
+     border: 2px solid grey; 
+     padding-top: 5px;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+#icon{
+    float: right !important;
+}
+ #icon:hover {
+    cursor: pointer;
+ }
+
+ .datetime{
+     width: 200px;
+ }
+
+ 
+ @media screen and (max-width: 700px) {
+    .btn{
+        width: 50%;
+        float: left;
+    }
+   
+    input, #ulMessages{
+        width: 100%;
+    }
+    body{
+        margin: 0px;
+        height: 100%;
+    }
+    #top{
+        position: absolute;
+    height:30%;
+    /* postaviti centralno*/
+    left: 0;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+    }
+    header{
+        height: 35%;
+    }
+    h1{
+        height:20%;
+    }
+    h2{
+        height:10%
+    } 
+    #bottom{
+        position: absolute;
+    height:30%;
+    /*postaviti centralno*/
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    overflow: hidden;
+    }
+    #ulMesssages{
+        position: absolute;
+        width: 100%;
+        height: 20%;
+        margin-top: 30%;
+        margin-bottom: 30%;
+        overflow: hidden;
+    }
+    #btnUpdate, #btnSend{
+        
+        width: 100%;
+    }
+
+}
+ 

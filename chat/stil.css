@@ -1,0 +1,120 @@
+
+
+ body{
+     text-align: center;
+     color: purple;
+     height: 100%;
+     width: 100%;
+     margin: 0;
+
+ }
+
+ .btn{
+    width: 190px;
+    height: 40px;
+    font-size: 18px;
+    background-color: purple;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+ }
+
+ .btn:hover{
+     background-color: mediumpurple;
+     cursor: pointer;
+ }
+
+ form{
+    margin: 15px;    
+}
+
+ input{
+     width: 400px;
+     height: 30px;
+     font-size: 18px; 
+     border-radius: 5px; 
+ }
+
+ input:focus{
+     border: 3px purple solid;
+ }
+
+ input:focus, .btn:focus{
+     outline-width: 0px
+     ;
+ }
+
+ .username{
+    font-weight: bold;
+ }
+ .date{
+     color: grey;
+ }
+#ulMessages{
+    list-style-type: none;
+    font-size: 20px;
+    /*pozicioniranje centralno ispod top sekcije*/
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25%;
+    bottom: 20%;
+    overflow: hidden;
+    /* ul centralno postavljena ali text levo poravnat */
+    text-align: left;
+    width: 700px;
+    margin: 0 auto;
+    /* skrolovanje poruka */
+    overflow-y: auto;
+    /* prelom cak i bez razmaka */
+    word-wrap: break-word;
+
+}
+
+#ulMessages>li{
+    width: 60%;
+    background-color: rgb(173, 134, 209);
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 0 20px 20px 20px;
+    margin-right: 5px;
+}
+
+.me{
+    margin-left: auto;
+    background-color: rgb(255, 71, 184) !important;/*stil koji pre svega treba primeniti*/
+    border-radius: 20px 0 20px 20px !important;
+}
+
+
+
+#top{
+    position: absolute;
+    height: 25%;
+    width: 100%;
+    /* postaviti centralno*/
+    left: 0;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+#bottom{
+    position: absolute;
+    height: 20%;
+    /*postaviti centralno*/
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+ #divUpdatedUsername{
+     font-size: 20px;
+ }
+ #spanUsername{
+     font-weight: bold;
+ }
+
+ .btn-selected{
+     background-color: mediumpurple;
+ }

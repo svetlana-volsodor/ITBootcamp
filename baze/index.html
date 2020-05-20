@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-firestore.js"></script>
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCPh4521zsts5jBr-321nHqNodoI7B6qWw",
+    authDomain: "projekat-prvi.firebaseapp.com",
+    databaseURL: "https://projekat-prvi.firebaseio.com",
+    projectId: "projekat-prvi",
+    storageBucket: "projekat-prvi.appspot.com",
+    messagingSenderId: "444355871755",
+    appId: "1:444355871755:web:c19ed4c8373d9e396c730e"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  let db = firebase.firestore();//db - objekat konekcije ka Firestore bazi
+</script>
+    <script src="script3.js"></script>
+</body>
+</html>

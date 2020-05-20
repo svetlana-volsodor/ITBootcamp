@@ -439,3 +439,55 @@ let ljudi = (niz, brLj) =>{
     }
 } 
 console.log(ljudi(nizAutobusi, 400));
+
+class Datum {
+    constructor(d, m, g){
+        this.dan = d;
+        this.mesec = m;
+        this.godina = g;
+    }
+    set dan(d){
+        this._dan=d;
+    }
+    get dan(){
+        return this._dan;
+    }
+    set mesec(m){
+        this._mesec = m;
+    }
+    get mesec(){
+        return this._mesec;
+    }
+    set godina(g){
+        this._godina = g;
+    }
+    get godina(){
+        return this._godina;
+    }
+    ispisi(){
+        console.log(`${this.dan}/${this.mesec}/${this.godina}`);
+    }
+}
+
+let dat1 = new Datum(5, 7, 1985);
+dat1.ispisi();
+let dat2 = new Datum(19, 2, 2000);
+dat2.ispisi();
+let ranijiDatum = (dat1, dat2) =>{
+    if(dat1.godina>dat2.godina){
+        return dat2;
+    } else if(dat1.godina = dat2.godina){
+        if(dat1.mesec>dat2.mesec){
+            return dat2;
+        } else if(dat1.mesec=dat2.mesec){
+            if(dat1.dan>dat2.dan){
+                return dat2;
+            } else if(dat1.dan = dat2.dan){
+                return 'isti datum';
+            }
+        }
+    } else {
+        return dat1;
+    }
+}
+console.log(ranijiDatum(dat1, dat2));
